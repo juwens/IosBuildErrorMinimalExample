@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Extensions.Hosting;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,6 +10,8 @@ namespace IosBuildErrorMinimalExample
         public App()
         {
             InitializeComponent();
+
+            var hosting = new HostBuilder();
 
             MainPage = new MainPage();
         }
